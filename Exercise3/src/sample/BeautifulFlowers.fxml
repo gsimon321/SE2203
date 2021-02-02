@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BeautifulFlowersController">
+   <children>
+      <RadioButton fx:id="roseRadioButton" layoutX="14.0" layoutY="128.0" mnemonicParsing="false" onAction="#roseRadioButtonListener" selected="true" text="Rose">
+         <toggleGroup>
+            <ToggleGroup fx:id="flowersToggleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="callaLilyRadioButton" layoutX="14.0" layoutY="152.0" mnemonicParsing="false" onAction="#callaLilyRadioButtonListener" text="Calla Lilly" toggleGroup="$flowersToggleGroup" />
+      <RadioButton fx:id="cannaRadioButton" layoutX="14.0" layoutY="176.0" mnemonicParsing="false" onAction="#cannaRadioButtonListener" text="Canna" toggleGroup="$flowersToggleGroup" />
+      <RadioButton fx:id="bleedingHeartRadioButton" layoutX="14.0" layoutY="200.0" mnemonicParsing="false" onAction="#bleedingHeartRadioButtonListener" text="Bleeding Heart" toggleGroup="$flowersToggleGroup" />
+      <RadioButton fx:id="cherryBlossomRadioButton" layoutX="14.0" layoutY="224.0" mnemonicParsing="false" onAction="#cherryBlossomRadioButtonListener" text="Cherry Blossom" toggleGroup="$flowersToggleGroup" />
+      <ImageView fx:id="flowersImageView" fitHeight="300.0" fitWidth="300.0" layoutX="125.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Rose.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="flowersNote" alignment="CENTER" layoutX="447.0" layoutY="50.0" prefHeight="300.0" prefWidth="150.0" text="This beautiful flower and symbol of love belongs the genus Rosa. The family name of thisflower is Rosaceae and it contains different other species in almost all parts of the world. Theflower of rose vary in size from each other depending upon the species to which they belong.A large number of species of this flower are found in different parts of Asia." wrapText="true" />
+   </children>
+</AnchorPane>
